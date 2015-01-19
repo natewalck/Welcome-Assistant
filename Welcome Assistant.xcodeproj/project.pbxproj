@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE9893691A6DCA4700A14B54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9893681A6DCA4700A14B54 /* AppDelegate.m */; };
+		AE98936B1A6DCA4700A14B54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE98936A1A6DCA4700A14B54 /* main.m */; };
+		AE98936D1A6DCA4700A14B54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE98936C1A6DCA4700A14B54 /* Images.xcassets */; };
+		AE9893701A6DCA4700A14B54 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE98936E1A6DCA4700A14B54 /* MainMenu.xib */; };
+		AE98937C1A6DCA4700A14B54 /* Welcome_AssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE98937B1A6DCA4700A14B54 /* Welcome_AssistantTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE9893761A6DCA4700A14B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE98935A1A6DCA4700A14B54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE9893611A6DCA4700A14B54;
+			remoteInfo = "Welcome Assistant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE9893621A6DCA4700A14B54 /* Welcome Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Welcome Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9893661A6DCA4700A14B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9893671A6DCA4700A14B54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE9893681A6DCA4700A14B54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE98936A1A6DCA4700A14B54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE98936C1A6DCA4700A14B54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AE98936F1A6DCA4700A14B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AE9893751A6DCA4700A14B54 /* Welcome AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Welcome AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE98937A1A6DCA4700A14B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE98937B1A6DCA4700A14B54 /* Welcome_AssistantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Welcome_AssistantTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE98935F1A6DCA4700A14B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9893721A6DCA4700A14B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE9893591A6DCA4700A14B54 = {
+			isa = PBXGroup;
+			children = (
+				AE9893641A6DCA4700A14B54 /* Welcome Assistant */,
+				AE9893781A6DCA4700A14B54 /* Welcome AssistantTests */,
+				AE9893631A6DCA4700A14B54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE9893631A6DCA4700A14B54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE9893621A6DCA4700A14B54 /* Welcome Assistant.app */,
+				AE9893751A6DCA4700A14B54 /* Welcome AssistantTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE9893641A6DCA4700A14B54 /* Welcome Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				AE9893671A6DCA4700A14B54 /* AppDelegate.h */,
+				AE9893681A6DCA4700A14B54 /* AppDelegate.m */,
+				AE98936C1A6DCA4700A14B54 /* Images.xcassets */,
+				AE98936E1A6DCA4700A14B54 /* MainMenu.xib */,
+				AE9893651A6DCA4700A14B54 /* Supporting Files */,
+			);
+			path = "Welcome Assistant";
+			sourceTree = "<group>";
+		};
+		AE9893651A6DCA4700A14B54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE9893661A6DCA4700A14B54 /* Info.plist */,
+				AE98936A1A6DCA4700A14B54 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE9893781A6DCA4700A14B54 /* Welcome AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE98937B1A6DCA4700A14B54 /* Welcome_AssistantTests.m */,
+				AE9893791A6DCA4700A14B54 /* Supporting Files */,
+			);
+			path = "Welcome AssistantTests";
+			sourceTree = "<group>";
+		};
+		AE9893791A6DCA4700A14B54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE98937A1A6DCA4700A14B54 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE9893611A6DCA4700A14B54 /* Welcome Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE98937F1A6DCA4700A14B54 /* Build configuration list for PBXNativeTarget "Welcome Assistant" */;
+			buildPhases = (
+				AE98935E1A6DCA4700A14B54 /* Sources */,
+				AE98935F1A6DCA4700A14B54 /* Frameworks */,
+				AE9893601A6DCA4700A14B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Welcome Assistant";
+			productName = "Welcome Assistant";
+			productReference = AE9893621A6DCA4700A14B54 /* Welcome Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE9893741A6DCA4700A14B54 /* Welcome AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9893821A6DCA4700A14B54 /* Build configuration list for PBXNativeTarget "Welcome AssistantTests" */;
+			buildPhases = (
+				AE9893711A6DCA4700A14B54 /* Sources */,
+				AE9893721A6DCA4700A14B54 /* Frameworks */,
+				AE9893731A6DCA4700A14B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE9893771A6DCA4700A14B54 /* PBXTargetDependency */,
+			);
+			name = "Welcome AssistantTests";
+			productName = "Welcome AssistantTests";
+			productReference = AE9893751A6DCA4700A14B54 /* Welcome AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE98935A1A6DCA4700A14B54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "OS X DevOps";
+				TargetAttributes = {
+					AE9893611A6DCA4700A14B54 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					AE9893741A6DCA4700A14B54 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = AE9893611A6DCA4700A14B54;
+					};
+				};
+			};
+			buildConfigurationList = AE98935D1A6DCA4700A14B54 /* Build configuration list for PBXProject "Welcome Assistant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE9893591A6DCA4700A14B54;
+			productRefGroup = AE9893631A6DCA4700A14B54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE9893611A6DCA4700A14B54 /* Welcome Assistant */,
+				AE9893741A6DCA4700A14B54 /* Welcome AssistantTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE9893601A6DCA4700A14B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE98936D1A6DCA4700A14B54 /* Images.xcassets in Resources */,
+				AE9893701A6DCA4700A14B54 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9893731A6DCA4700A14B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE98935E1A6DCA4700A14B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE98936B1A6DCA4700A14B54 /* main.m in Sources */,
+				AE9893691A6DCA4700A14B54 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9893711A6DCA4700A14B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE98937C1A6DCA4700A14B54 /* Welcome_AssistantTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE9893771A6DCA4700A14B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE9893611A6DCA4700A14B54 /* Welcome Assistant */;
+			targetProxy = AE9893761A6DCA4700A14B54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE98936E1A6DCA4700A14B54 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE98936F1A6DCA4700A14B54 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE98937D1A6DCA4700A14B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AE98937E1A6DCA4700A14B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AE9893801A6DCA4700A14B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Welcome Assistant/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE9893811A6DCA4700A14B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Welcome Assistant/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AE9893831A6DCA4700A14B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Welcome AssistantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Welcome Assistant.app/Contents/MacOS/Welcome Assistant";
+			};
+			name = Debug;
+		};
+		AE9893841A6DCA4700A14B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Welcome AssistantTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Welcome Assistant.app/Contents/MacOS/Welcome Assistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE98935D1A6DCA4700A14B54 /* Build configuration list for PBXProject "Welcome Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE98937D1A6DCA4700A14B54 /* Debug */,
+				AE98937E1A6DCA4700A14B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE98937F1A6DCA4700A14B54 /* Build configuration list for PBXNativeTarget "Welcome Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9893801A6DCA4700A14B54 /* Debug */,
+				AE9893811A6DCA4700A14B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE9893821A6DCA4700A14B54 /* Build configuration list for PBXNativeTarget "Welcome AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9893831A6DCA4700A14B54 /* Debug */,
+				AE9893841A6DCA4700A14B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE98935A1A6DCA4700A14B54 /* Project object */;
+}
