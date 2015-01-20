@@ -13,7 +13,7 @@
 {
     NSArray *pageList;
     NSDictionary *prefPageList;
-    NSDictionary *welcomePrefs;
+    NSArray *welcomePrefs;
     
     NSViewController *theWelcomeView;
     NSViewController *nextPageController;
@@ -44,6 +44,8 @@
 - (IBAction)backButton:(id)sender;
 
 - (void)loadPreferences;
+- (id)setupWelcomeView:(NSArray *)pageToSetup;
+- (NSViewController *)changeViewController:(NSViewController *)viewName;
 
 
 @end

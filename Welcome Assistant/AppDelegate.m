@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "welcomeScreenController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,10 @@
     NSSize windowSize = _mainWindowControl.frame.size;
     [_mainWindowControl setMinSize:windowSize];
     [_mainWindowControl setMaxSize:windowSize];
-    NSLog(@"%@", prefPageList);
+    theWelcomeView = [self setupWelcomeView:welcomePrefs];
+    [self changeViewController:theWelcomeView];
+    NSLog(@"%@", theWelcomeView);
+    [pageList arrayByAddingObject:[self setupWelcomeView:welcomePrefs]];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -63,6 +67,24 @@
     [userDefaults registerDefaults:defaultPreferences];
     prefPageList = [userDefaults objectForKey:@"AssistantPages"];
     welcomePrefs= [userDefaults objectForKey:@"WelcomePage"];
+}
+
+- (id)setupWelcomeView:(NSArray *)pageToSetup {
+    NSDictionary *item = [pageToSetup objectAtIndex:0];
+    NSString *titleValue = [item objectForKey:@"Title"];
+    NSString *imagePath = [item objectForKey:@"Image"];
+    NSString *bodyValue = [item objectForKey:@"Body"];
+    welcomeScreenController *returnView = [[welcomeScreenController alloc] initWithTitle:titleValue
+                                                                                    body:bodyValue
+                                                                                   image:imagePath];
+    return returnView;
+}
+
+-(NSViewController *)changeViewController:(NSViewController *)viewName
+{
+    currentViewController = viewName;
+    [[self myCustomView] addSubview:[viewName view]];
+    return currentViewController;
 }
 
 @end

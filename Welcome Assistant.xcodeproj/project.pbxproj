@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AE3085051A6DE25F00B8CDDF /* defaultPrefs.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE3085041A6DE25F00B8CDDF /* defaultPrefs.plist */; };
+		AE30850B1A6DFBA800B8CDDF /* welcomeScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3085091A6DFBA800B8CDDF /* welcomeScreenController.m */; };
+		AE30850C1A6DFBA800B8CDDF /* welcomeScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE30850A1A6DFBA800B8CDDF /* welcomeScreenController.xib */; };
 		AE9893691A6DCA4700A14B54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9893681A6DCA4700A14B54 /* AppDelegate.m */; };
 		AE98936B1A6DCA4700A14B54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE98936A1A6DCA4700A14B54 /* main.m */; };
 		AE98936D1A6DCA4700A14B54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE98936C1A6DCA4700A14B54 /* Images.xcassets */; };
@@ -27,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		AE3085041A6DE25F00B8CDDF /* defaultPrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaultPrefs.plist; sourceTree = "<group>"; };
+		AE3085081A6DFBA800B8CDDF /* welcomeScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = welcomeScreenController.h; sourceTree = "<group>"; };
+		AE3085091A6DFBA800B8CDDF /* welcomeScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = welcomeScreenController.m; sourceTree = "<group>"; };
+		AE30850A1A6DFBA800B8CDDF /* welcomeScreenController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = welcomeScreenController.xib; sourceTree = "<group>"; };
 		AE9893621A6DCA4700A14B54 /* Welcome Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Welcome Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9893661A6DCA4700A14B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE9893671A6DCA4700A14B54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,6 +89,9 @@
 				AE98936E1A6DCA4700A14B54 /* MainMenu.xib */,
 				AE9893651A6DCA4700A14B54 /* Supporting Files */,
 				AE3085041A6DE25F00B8CDDF /* defaultPrefs.plist */,
+				AE3085081A6DFBA800B8CDDF /* welcomeScreenController.h */,
+				AE3085091A6DFBA800B8CDDF /* welcomeScreenController.m */,
+				AE30850A1A6DFBA800B8CDDF /* welcomeScreenController.xib */,
 			);
 			path = "Welcome Assistant";
 			sourceTree = "<group>";
@@ -194,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE30850C1A6DFBA800B8CDDF /* welcomeScreenController.xib in Resources */,
 				AE3085051A6DE25F00B8CDDF /* defaultPrefs.plist in Resources */,
 				AE98936D1A6DCA4700A14B54 /* Images.xcassets in Resources */,
 				AE9893701A6DCA4700A14B54 /* MainMenu.xib in Resources */,
@@ -216,6 +225,7 @@
 			files = (
 				AE98936B1A6DCA4700A14B54 /* main.m in Sources */,
 				AE9893691A6DCA4700A14B54 /* AppDelegate.m in Sources */,
+				AE30850B1A6DFBA800B8CDDF /* welcomeScreenController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
