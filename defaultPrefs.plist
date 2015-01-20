@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AssistantPages</key>
+	<array>
+		<dict>
+			<key>Body</key>
+			<string>Nothing Here!f</string>
+			<key>PageType</key>
+			<string>info</string>
+			<key>Title</key>
+			<string>Nope</string>
+		</dict>
+	</array>
+	<key>WelcomePage</key>
+	<array>
+		<dict>
+			<key>Body</key>
+			<string>Please place a preference file</string>
+			<key>Image</key>
+			<string></string>
+			<key>Title</key>
+			<string>No Preference File Found!</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,9 +7,43 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    NSArray *pageList;
+    NSDictionary *prefPageList;
+    NSDictionary *welcomePrefs;
+    
+    NSViewController *theWelcomeView;
+    NSViewController *nextPageController;
+    NSViewController *previousPageController;
+    NSViewController *currentViewController;
+    
+    NSWorkspace *currentWorkspace;
+    
+    NSUserDefaults *standardUserDefaults;
+    
+    NSInteger *firstPage;
+    NSInteger *lastPage;
+    NSInteger *currentPage;
+    NSInteger *nextPage;
+    NSInteger *previousPage;
+    
+    BOOL *endOfAssistant;
+}
+
+@property (weak) IBOutlet NSWindow *mainWindowControl;
+@property (weak) IBOutlet NSButton *continueButtonControl;
+@property (weak) IBOutlet NSButton *backButtonControl;
+
+@property (weak) IBOutlet NSView *myCustomView;
+
+
+- (IBAction)continueButton:(id)sender;
+- (IBAction)backButton:(id)sender;
+
+- (void)loadPreferences;
 
 
 @end
-
