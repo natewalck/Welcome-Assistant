@@ -15,11 +15,11 @@
 @implementation welcomeScreenController
 
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
 }
+
 
 - (id)initWithTitle:(NSString *)titleString body:(NSString *)bodyString image:(NSString *)imagePath
 {
@@ -27,10 +27,7 @@
     if (self) {
         welcomeTitle = titleString;
         welcomeBody = bodyString;
-        welcomeImage = imagePath;
-        [self.welcomeScreenTitle setStringValue:welcomeTitle];
-        [self.welcomeScreenBody setStringValue:welcomeBody];
-        [self.welcomeScreenImage setStringValue:welcomeImage];
+        welcomeImagePath = imagePath;
     }
     return self;
 }
@@ -38,21 +35,29 @@
 
 - (id)init
 {
-    self = [super init];
-    if (self) {
-        [self.welcomeScreenTitle setStringValue:@"Title"];
-        [self.welcomeScreenBody setStringValue:@"Body"];
-        [self.welcomeScreenImage setStringValue:@"/path/to/image.jpg"];
-    }
-    return self;
+    return [self initWithTitle:@"Default"
+                       body:@"Default"
+                         image:NULL];
 }
 
 
 - (NSString *)description
 {
     NSString *result;
-    result = [[NSString alloc] initWithFormat:@"Title = %@, Body = %@, Image = %@", welcomeTitle, welcomeBody, welcomeImage];
+    result = [[NSString alloc] initWithFormat:@"Title = %@, Body = %@, Image = %@", welcomeTitle, welcomeBody, welcomeImagePath];
     return result;
 }
+
+
+// Add check to make sure welcomeScreenImage is valid, otherwise don't try to load it.
+- (void)loadView
+{
+    [super loadView];
+    NSImage *welcomeImage = [[NSImage alloc] initWithContentsOfFile:welcomeImagePath];
+    [self.welcomeScreenTitle setStringValue:welcomeTitle];
+    [self.welcomeScreenBody setStringValue:welcomeBody];
+    [self.welcomeScreenImage setImage:welcomeImage];
+}
+
 
 @end

@@ -12,7 +12,7 @@
 {
     NSString *welcomeTitle;
     NSString *welcomeBody;
-    NSString *welcomeImage;
+    NSString *welcomeImagePath;
 }
 
 @property (weak) IBOutlet NSTextField *welcomeScreenTitle;
