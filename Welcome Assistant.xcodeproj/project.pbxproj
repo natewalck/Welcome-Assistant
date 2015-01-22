@@ -15,6 +15,14 @@
 		AE98936D1A6DCA4700A14B54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE98936C1A6DCA4700A14B54 /* Images.xcassets */; };
 		AE9893701A6DCA4700A14B54 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE98936E1A6DCA4700A14B54 /* MainMenu.xib */; };
 		AE98937C1A6DCA4700A14B54 /* Welcome_AssistantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE98937B1A6DCA4700A14B54 /* Welcome_AssistantTests.m */; };
+		AECD5A701A70C675003A4676 /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECD5A6E1A70C675003A4676 /* webViewController.m */; };
+		AECD5A711A70C675003A4676 /* webViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECD5A6F1A70C675003A4676 /* webViewController.xib */; };
+		AECD5A751A70CCA6003A4676 /* infoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECD5A731A70CCA6003A4676 /* infoViewController.m */; };
+		AECD5A761A70CCA6003A4676 /* infoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECD5A741A70CCA6003A4676 /* infoViewController.xib */; };
+		AECD5A7A1A70CE03003A4676 /* imageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECD5A781A70CE03003A4676 /* imageViewController.m */; };
+		AECD5A7B1A70CE03003A4676 /* imageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECD5A791A70CE03003A4676 /* imageViewController.xib */; };
+		AECD5A7F1A70D2D0003A4676 /* eulaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECD5A7D1A70D2D0003A4676 /* eulaViewController.m */; };
+		AECD5A801A70D2D0003A4676 /* eulaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECD5A7E1A70D2D0003A4676 /* eulaViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,18 @@
 		AE9893751A6DCA4700A14B54 /* Welcome AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Welcome AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE98937A1A6DCA4700A14B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE98937B1A6DCA4700A14B54 /* Welcome_AssistantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Welcome_AssistantTests.m; sourceTree = "<group>"; };
+		AECD5A6D1A70C675003A4676 /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewController.h; sourceTree = "<group>"; };
+		AECD5A6E1A70C675003A4676 /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewController.m; sourceTree = "<group>"; };
+		AECD5A6F1A70C675003A4676 /* webViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = webViewController.xib; sourceTree = "<group>"; };
+		AECD5A721A70CCA6003A4676 /* infoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infoViewController.h; sourceTree = "<group>"; };
+		AECD5A731A70CCA6003A4676 /* infoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = infoViewController.m; sourceTree = "<group>"; };
+		AECD5A741A70CCA6003A4676 /* infoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = infoViewController.xib; sourceTree = "<group>"; };
+		AECD5A771A70CE03003A4676 /* imageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageViewController.h; sourceTree = "<group>"; };
+		AECD5A781A70CE03003A4676 /* imageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageViewController.m; sourceTree = "<group>"; };
+		AECD5A791A70CE03003A4676 /* imageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = imageViewController.xib; sourceTree = "<group>"; };
+		AECD5A7C1A70D2D0003A4676 /* eulaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eulaViewController.h; sourceTree = "<group>"; };
+		AECD5A7D1A70D2D0003A4676 /* eulaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eulaViewController.m; sourceTree = "<group>"; };
+		AECD5A7E1A70D2D0003A4676 /* eulaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = eulaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +112,18 @@
 				AE3085081A6DFBA800B8CDDF /* welcomeScreenController.h */,
 				AE3085091A6DFBA800B8CDDF /* welcomeScreenController.m */,
 				AE30850A1A6DFBA800B8CDDF /* welcomeScreenController.xib */,
+				AECD5A6D1A70C675003A4676 /* webViewController.h */,
+				AECD5A6E1A70C675003A4676 /* webViewController.m */,
+				AECD5A6F1A70C675003A4676 /* webViewController.xib */,
+				AECD5A721A70CCA6003A4676 /* infoViewController.h */,
+				AECD5A731A70CCA6003A4676 /* infoViewController.m */,
+				AECD5A741A70CCA6003A4676 /* infoViewController.xib */,
+				AECD5A771A70CE03003A4676 /* imageViewController.h */,
+				AECD5A781A70CE03003A4676 /* imageViewController.m */,
+				AECD5A791A70CE03003A4676 /* imageViewController.xib */,
+				AECD5A7C1A70D2D0003A4676 /* eulaViewController.h */,
+				AECD5A7D1A70D2D0003A4676 /* eulaViewController.m */,
+				AECD5A7E1A70D2D0003A4676 /* eulaViewController.xib */,
 			);
 			path = "Welcome Assistant";
 			sourceTree = "<group>";
@@ -202,8 +234,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECD5A7B1A70CE03003A4676 /* imageViewController.xib in Resources */,
 				AE30850C1A6DFBA800B8CDDF /* welcomeScreenController.xib in Resources */,
+				AECD5A711A70C675003A4676 /* webViewController.xib in Resources */,
+				AECD5A761A70CCA6003A4676 /* infoViewController.xib in Resources */,
 				AE3085051A6DE25F00B8CDDF /* defaultPrefs.plist in Resources */,
+				AECD5A801A70D2D0003A4676 /* eulaViewController.xib in Resources */,
 				AE98936D1A6DCA4700A14B54 /* Images.xcassets in Resources */,
 				AE9893701A6DCA4700A14B54 /* MainMenu.xib in Resources */,
 			);
@@ -223,9 +259,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECD5A7A1A70CE03003A4676 /* imageViewController.m in Sources */,
 				AE98936B1A6DCA4700A14B54 /* main.m in Sources */,
+				AECD5A7F1A70D2D0003A4676 /* eulaViewController.m in Sources */,
 				AE9893691A6DCA4700A14B54 /* AppDelegate.m in Sources */,
 				AE30850B1A6DFBA800B8CDDF /* welcomeScreenController.m in Sources */,
+				AECD5A751A70CCA6003A4676 /* infoViewController.m in Sources */,
+				AECD5A701A70C675003A4676 /* webViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
