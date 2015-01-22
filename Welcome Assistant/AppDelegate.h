@@ -46,6 +46,8 @@
 - (void)loadPreferences;
 - (id)setupWelcomeView:(NSArray *)pageToSetup;
 - (NSViewController *)changeViewController:(NSViewController *)viewName;
+//- (NSViewController *)setupViewController:(NSString *)type title:(NSString *) content:(NSString *)content image:(NSString *)image
+- (NSArray *)setupAllPages:(NSArray *)pagesToSetup;
 
 
 @end

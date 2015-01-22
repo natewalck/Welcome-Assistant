@@ -24,8 +24,8 @@
     [_mainWindowControl setMaxSize:windowSize];
     theWelcomeView = [self setupWelcomeView:welcomePrefs];
     [self changeViewController:theWelcomeView];
-    NSLog(@"%@", theWelcomeView);
     [pageList arrayByAddingObject:[self setupWelcomeView:welcomePrefs]];
+    [self setupAllPages: prefPageList];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -91,5 +91,30 @@
     [[viewName view] setFrame:[[self myCustomView] bounds]];
     return currentViewController;
 }
+
+-(NSArray *)setupAllPages:(NSArray *)pagesToSetup
+{
+    for (id page in pagesToSetup) {
+        NSString *pageType = [page objectForKey:@"PageType"];
+
+        // Issue correct setupController command and add page to pageList array
+        if([pageType isEqualToString:@"info"]){
+            NSLog(@"Info Page!");
+        }
+        else if([pageType isEqualToString:@"weburl"]){
+            NSLog(@"URL Page!");
+        }
+        else if([pageType isEqualToString:@"image"]){
+            NSLog(@"Image Page!");
+        }
+    }
+    return nil;
+}
+
+//-(NSViewController *)setupViewController:(NSViewController *)viewName
+//{
+//    
+//    return NULL;
+//}
 
 @end
