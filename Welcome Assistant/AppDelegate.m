@@ -82,8 +82,13 @@
 
 -(NSViewController *)changeViewController:(NSViewController *)viewName
 {
+    NSArray *allSubViews = [[self myCustomView] subviews];
+    for (id subView in allSubViews) {
+        [subView removeFromSuperview];
+    }
     currentViewController = viewName;
     [[self myCustomView] addSubview:[viewName view]];
+    [[viewName view] setFrame:[[self myCustomView] bounds]];
     return currentViewController;
 }
 
