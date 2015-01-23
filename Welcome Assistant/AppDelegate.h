@@ -11,26 +11,26 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
-    NSArray *pageList;
-    NSDictionary *prefPageList;
-    NSArray *welcomePrefs;
+    NSMutableArray *_pageList;
+    NSDictionary *_prefPageList;
+    NSArray *_welcomePrefs;
     
-    NSViewController *theWelcomeView;
-    NSViewController *nextPageController;
-    NSViewController *previousPageController;
-    NSViewController *currentViewController;
+    NSViewController *_theWelcomeView;
+    NSViewController *_nextPageController;
+    NSViewController *_previousPageController;
+    NSViewController *_currentViewController;
     
-    NSWorkspace *currentWorkspace;
+    NSWorkspace *_currentWorkspace;
     
-    NSUserDefaults *standardUserDefaults;
+    NSUserDefaults *_standardUserDefaults;
     
-    NSInteger *firstPage;
-    NSInteger *lastPage;
-    NSInteger *currentPage;
-    NSInteger *nextPage;
-    NSInteger *previousPage;
+    NSInteger *_firstPage;
+    NSInteger *_lastPage;
+    NSInteger *_currentPage;
+    NSInteger *_nextPage;
+    NSInteger *_previousPage;
     
-    BOOL *endOfAssistant;
+    BOOL *_endOfAssistant;
 }
 
 @property (weak) IBOutlet NSWindow *mainWindowControl;
@@ -44,10 +44,8 @@
 - (IBAction)backButton:(id)sender;
 
 - (void)loadPreferences;
-- (id)setupWelcomeView:(NSArray *)pageToSetup;
+- (NSViewController *)setupWelcomeView:(NSArray *)pageToSetup;
 - (NSViewController *)changeViewController:(NSViewController *)viewName;
-//- (NSViewController *)setupViewController:(NSString *)type title:(NSString *) content:(NSString *)content image:(NSString *)image
-- (NSArray *)setupAllPages:(NSArray *)pagesToSetup;
-
+- (NSArray *)setupAllPages:(NSDictionary *)pagesToSetup;
 
 @end
