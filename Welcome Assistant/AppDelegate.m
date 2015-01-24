@@ -147,6 +147,10 @@
             imageViewController *newView = [[imageViewController alloc] initWithTitle:[page objectForKey:@"Title"]
                                                                                 image:[page objectForKey:@"Body"]];
             [newPages addObject:newView];
+        } else if ([pageType isEqualToString:@"eula"]) {
+            eulaViewController *newView = [[eulaViewController alloc] initWithTitle:[page objectForKey:@"Title"]
+                                                                               body:[page objectForKey:@"Body"]];
+            [newPages addObject:newView];
         }
     }
 //    for (id page in newPages) {
@@ -204,6 +208,7 @@
     } else {
         [[self backButtonControl] setEnabled:true];
     }
+    
     
 //    NSLog(@"Next: %lu", _nextPage);
 //    NSLog(@"Current: %lu", _currentPage);

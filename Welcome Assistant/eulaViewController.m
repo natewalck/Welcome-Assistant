@@ -14,6 +14,7 @@
 
 @implementation eulaViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do view setup here.
@@ -50,6 +51,8 @@
     [super loadView];
     [self.eulaViewTitleControl setStringValue:eulaViewTitle];
     [self.eulaViewBodyControl setStringValue:eulaViewBody];
+    [self.eulaViewCheckboxControl setState:0];
 }
+
 
 @end

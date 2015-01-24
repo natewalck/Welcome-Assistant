@@ -43,5 +43,6 @@
                 </button>
             </subviews>
         </customView>
+        <userDefaultsController representsSharedInstance="YES" id="dzT-SP-bVe"/>
     </objects>
 </document>
