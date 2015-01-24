@@ -30,7 +30,7 @@
     NSInteger _nextPage;
     NSInteger _previousPage;
     
-    BOOL *_endOfAssistant;
+    BOOL _endOfAssistant;
 }
 
 @property (weak) IBOutlet NSWindow *mainWindowControl;

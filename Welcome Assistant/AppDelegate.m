@@ -181,12 +181,12 @@
         _previousPage = _currentPage - 1;
     }
     
-    if (direction == @"continue") {
+    if ([direction isEqualToString:@"continue"]) {
         if (!((_currentPage + 1) > _lastPage)) {
             _currentPage = _currentPage + 1;
             pageToReturn = [_pageList objectAtIndex:_nextPage];
         }
-    } else if (direction == @"back") {
+    } else if ([direction isEqualToString:@"back"]) {
         if (!((_currentPage -1) < _firstPage)) {
             _currentPage = _currentPage - 1;
             pageToReturn = [_pageList objectAtIndex:_previousPage];
