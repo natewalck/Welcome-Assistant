@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2ADF161A73520400EB405B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2ADF151A73520400EB405B /* WebKit.framework */; };
 		AE3085051A6DE25F00B8CDDF /* defaultPrefs.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE3085041A6DE25F00B8CDDF /* defaultPrefs.plist */; };
 		AE30850B1A6DFBA800B8CDDF /* welcomeScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3085091A6DFBA800B8CDDF /* welcomeScreenController.m */; };
 		AE30850C1A6DFBA800B8CDDF /* welcomeScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE30850A1A6DFBA800B8CDDF /* welcomeScreenController.xib */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE2ADF151A73520400EB405B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AE3085041A6DE25F00B8CDDF /* defaultPrefs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaultPrefs.plist; sourceTree = "<group>"; };
 		AE3085081A6DFBA800B8CDDF /* welcomeScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = welcomeScreenController.h; sourceTree = "<group>"; };
 		AE3085091A6DFBA800B8CDDF /* welcomeScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = welcomeScreenController.m; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE2ADF161A73520400EB405B /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 		AE9893591A6DCA4700A14B54 = {
 			isa = PBXGroup;
 			children = (
+				AE2ADF151A73520400EB405B /* WebKit.framework */,
 				AE9893641A6DCA4700A14B54 /* Welcome Assistant */,
 				AE9893781A6DCA4700A14B54 /* Welcome AssistantTests */,
 				AE9893631A6DCA4700A14B54 /* Products */,

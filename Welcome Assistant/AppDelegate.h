@@ -45,8 +45,8 @@
 
 - (void)loadPreferences;
 - (NSViewController *)setupWelcomeView:(NSArray *)pageToSetup;
-- (NSViewController *)changeViewController:(NSViewController *)viewName;
+- (void)changeViewController:(NSViewController *)viewName;
 - (NSArray *)setupAllPages:(NSDictionary *)pagesToSetup;
-- (NSDictionary *)pageController:(NSString *)direction;
+- (NSViewController *)pageController:(NSString *)direction;
 
 @end

@@ -61,12 +61,32 @@
 
 - (IBAction)continueButton:(id)sender {
     NSLog(@"Continue Button Pressed");
-    [self pageController:@"continue"];
+    NSViewController *nextView;
+    nextView = [self pageController:@"continue"];
+    [self changeViewController:nextView];
+    
+    if (_currentPage == _lastPage) {
+        if (_endOfAssistant) {
+            [[NSApplication sharedApplication] terminate:nil];
+        } else {
+            _endOfAssistant = true;
+        }
+    } else {
+        _endOfAssistant = false;
+    }
+    
 }
 
 - (IBAction)backButton:(id)sender {
     NSLog(@"Back Button Pressed");
-    [self pageController:@"back"];
+    NSViewController *nextView;
+    nextView = [self pageController:@"back"];
+    [self changeViewController:nextView];
+    if (_currentPage == _lastPage) {
+        _endOfAssistant = true;
+    } else {
+        _endOfAssistant = false;
+    }
 }
 
 
@@ -92,7 +112,7 @@
     return returnView;
 }
 
--(NSViewController *)changeViewController:(NSViewController *)viewName
+-(void)changeViewController:(NSViewController *)viewName
 {
     NSArray *allSubViews = [[self myCustomView] subviews];
     for (id subView in allSubViews) {
@@ -101,7 +121,6 @@
     _currentViewController = viewName;
     [[self myCustomView] addSubview:[viewName view]];
     [[viewName view] setFrame:[[self myCustomView] bounds]];
-    return _currentViewController;
 }
 
 -(NSArray *)setupAllPages:(NSDictionary *)pagesToSetup
@@ -119,8 +138,10 @@
         }
         else if([pageType isEqualToString:@"weburl"]){
 //            NSLog(@"URL Page!");
+            NSLog(@"%@", [page objectForKey:@"URL"]);
             webViewController *newView = [[webViewController alloc] initWithTitle:[page objectForKey:@"Title"]
                                                                                url:[page objectForKey:@"URL"]];
+            NSLog(@"%@", newView);
             [newPages addObject:newView];
         }
         else if([pageType isEqualToString:@"image"]){
@@ -137,9 +158,9 @@
     return newPages;
 }
 
-- (NSDictionary *)pageController:(NSString *)direction
+- (NSViewController *)pageController:(NSString *)direction
 {
-    NSDictionary *pagesToReturn = [[NSDictionary alloc] init];
+    NSViewController *pageToReturn;
 //    NSLog(@"%lx", [_pageList count]);
     if (!(_lastPage)) {
         _lastPage = [_pageList count] - 1;
@@ -165,17 +186,19 @@
     if (direction == @"continue") {
         if (!((_currentPage + 1) > _lastPage)) {
             _currentPage = _currentPage + 1;
+            pageToReturn = [_pageList objectAtIndex:_nextPage];
         }
     } else if (direction == @"back") {
         if (!((_currentPage -1) < _firstPage)) {
             _currentPage = _currentPage - 1;
+            pageToReturn = [_pageList objectAtIndex:_previousPage];
         }
     }
     
     if (_currentPage == _lastPage) {
-        [[self continueButtonControl] setEnabled:false];
+        [[self continueButtonControl] setTitle:@"Finish"];
     } else {
-        [[self continueButtonControl] setEnabled:true];
+        [[self continueButtonControl] setTitle:@"Continue"];
     }
     
     if (_currentPage == _firstPage) {
@@ -187,7 +210,7 @@
     NSLog(@"Next: %lu", _nextPage);
     NSLog(@"Current: %lu", _currentPage);
     NSLog(@"Prev: %lu", _previousPage);
-    return pagesToReturn;
+    return pageToReturn;
 }
 
 

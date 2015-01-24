@@ -49,8 +49,8 @@
 - (void)loadView
 {
     [super loadView];
-    [self.webViewTitleControl setStringValue:webViewTitle];
-    [self.webViewControl setMainFrameURL:webViewURL];
+    [[self webViewTitleControl] setStringValue:webViewTitle];
+    [[self webViewControl] setMainFrameURL:webViewURL];
 }
 
 @end
