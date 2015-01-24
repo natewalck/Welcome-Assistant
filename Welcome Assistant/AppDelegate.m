@@ -31,9 +31,7 @@
     [self changeViewController:_theWelcomeView];
     _pageList = [[NSMutableArray alloc] init];
     [_pageList addObject:_theWelcomeView];
-    NSArray *newPages = [[NSArray alloc] init];
-    newPages = [self setupAllPages: _prefPageList];
-    [_pageList addObjectsFromArray:newPages];
+    [_pageList addObjectsFromArray:[self setupAllPages: _prefPageList]];
     for (id page in _pageList){
         NSLog(@"%@", page);
     }
@@ -51,6 +49,7 @@
         NSLog(@"Application init!");
         [self loadPreferences];
         _currentWorkspace = [NSWorkspace sharedWorkspace];
+        _currentPage = 0;
     }
     return self;
 }
@@ -62,10 +61,12 @@
 
 - (IBAction)continueButton:(id)sender {
     NSLog(@"Continue Button Pressed");
+    [self pageController:@"continue"];
 }
 
 - (IBAction)backButton:(id)sender {
     NSLog(@"Back Button Pressed");
+    [self pageController:@"back"];
 }
 
 
@@ -134,6 +135,59 @@
 //    }
     NSLog(@"setupAllPages complete!");
     return newPages;
+}
+
+- (NSDictionary *)pageController:(NSString *)direction
+{
+    NSDictionary *pagesToReturn = [[NSDictionary alloc] init];
+//    NSLog(@"%lx", [_pageList count]);
+    if (!(_lastPage)) {
+        _lastPage = [_pageList count] - 1;
+        NSLog(@"Setting last page to %lu", _lastPage);
+    }
+    if (!(_firstPage)) {
+        _firstPage = 0;
+        NSLog(@"%ld", (unsigned long)_firstPage);
+    }
+    
+    if ((_currentPage + 1) > _lastPage) {
+        _nextPage = _lastPage;
+    } else {
+        _nextPage = _currentPage + 1;
+    }
+    
+    if ((_currentPage -1) < _firstPage) {
+        _previousPage = _firstPage;
+    } else {
+        _previousPage = _currentPage - 1;
+    }
+    
+    if (direction == @"continue") {
+        if (!((_currentPage + 1) > _lastPage)) {
+            _currentPage = _currentPage + 1;
+        }
+    } else if (direction == @"back") {
+        if (!((_currentPage -1) < _firstPage)) {
+            _currentPage = _currentPage - 1;
+        }
+    }
+    
+    if (_currentPage == _lastPage) {
+        [[self continueButtonControl] setEnabled:false];
+    } else {
+        [[self continueButtonControl] setEnabled:true];
+    }
+    
+    if (_currentPage == _firstPage) {
+        [[self backButtonControl] setEnabled:false];
+    } else {
+        [[self backButtonControl] setEnabled:true];
+    }
+    
+    NSLog(@"Next: %lu", _nextPage);
+    NSLog(@"Current: %lu", _currentPage);
+    NSLog(@"Prev: %lu", _previousPage);
+    return pagesToReturn;
 }
 
 

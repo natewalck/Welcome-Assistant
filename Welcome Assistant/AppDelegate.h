@@ -24,11 +24,11 @@
     
     NSUserDefaults *_standardUserDefaults;
     
-    NSInteger *_firstPage;
-    NSInteger *_lastPage;
-    NSInteger *_currentPage;
-    NSInteger *_nextPage;
-    NSInteger *_previousPage;
+    NSInteger _firstPage;
+    NSInteger _lastPage;
+    NSInteger _currentPage;
+    NSInteger _nextPage;
+    NSInteger _previousPage;
     
     BOOL *_endOfAssistant;
 }
@@ -47,5 +47,6 @@
 - (NSViewController *)setupWelcomeView:(NSArray *)pageToSetup;
 - (NSViewController *)changeViewController:(NSViewController *)viewName;
 - (NSArray *)setupAllPages:(NSDictionary *)pagesToSetup;
+- (NSDictionary *)pageController:(NSString *)direction;
 
 @end
