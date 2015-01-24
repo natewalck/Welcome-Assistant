@@ -32,9 +32,9 @@
     _pageList = [[NSMutableArray alloc] init];
     [_pageList addObject:_theWelcomeView];
     [_pageList addObjectsFromArray:[self setupAllPages: _prefPageList]];
-    for (id page in _pageList){
-        NSLog(@"%@", page);
-    }
+//    for (id page in _pageList){
+//        NSLog(@"%@", page);
+//    }
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -60,7 +60,7 @@
 }
 
 - (IBAction)continueButton:(id)sender {
-    NSLog(@"Continue Button Pressed");
+//    NSLog(@"Continue Button Pressed");
     NSViewController *nextView;
     nextView = [self pageController:@"continue"];
     [self changeViewController:nextView];
@@ -78,7 +78,7 @@
 }
 
 - (IBAction)backButton:(id)sender {
-    NSLog(@"Back Button Pressed");
+//    NSLog(@"Back Button Pressed");
     NSViewController *nextView;
     nextView = [self pageController:@"back"];
     [self changeViewController:nextView];
@@ -138,10 +138,8 @@
         }
         else if([pageType isEqualToString:@"weburl"]){
 //            NSLog(@"URL Page!");
-            NSLog(@"%@", [page objectForKey:@"URL"]);
             webViewController *newView = [[webViewController alloc] initWithTitle:[page objectForKey:@"Title"]
                                                                                url:[page objectForKey:@"URL"]];
-            NSLog(@"%@", newView);
             [newPages addObject:newView];
         }
         else if([pageType isEqualToString:@"image"]){
@@ -164,11 +162,11 @@
 //    NSLog(@"%lx", [_pageList count]);
     if (!(_lastPage)) {
         _lastPage = [_pageList count] - 1;
-        NSLog(@"Setting last page to %lu", _lastPage);
+//        NSLog(@"Setting last page to %lu", _lastPage);
     }
     if (!(_firstPage)) {
         _firstPage = 0;
-        NSLog(@"%ld", (unsigned long)_firstPage);
+//        NSLog(@"%ld", (unsigned long)_firstPage);
     }
     
     if ((_currentPage + 1) > _lastPage) {
@@ -207,9 +205,9 @@
         [[self backButtonControl] setEnabled:true];
     }
     
-    NSLog(@"Next: %lu", _nextPage);
-    NSLog(@"Current: %lu", _currentPage);
-    NSLog(@"Prev: %lu", _previousPage);
+//    NSLog(@"Next: %lu", _nextPage);
+//    NSLog(@"Current: %lu", _currentPage);
+//    NSLog(@"Prev: %lu", _previousPage);
     return pageToReturn;
 }
 
