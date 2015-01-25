@@ -11,7 +11,6 @@
 #import "infoViewController.h"
 #import "webViewController.h"
 #import "imageViewController.h"
-#import "eulaViewController.h"
 
 @interface AppDelegate ()
 
@@ -146,10 +145,6 @@
 //            NSLog(@"Image Page!");
             imageViewController *newView = [[imageViewController alloc] initWithTitle:[page objectForKey:@"Title"]
                                                                                 image:[page objectForKey:@"Body"]];
-            [newPages addObject:newView];
-        } else if ([pageType isEqualToString:@"eula"]) {
-            eulaViewController *newView = [[eulaViewController alloc] initWithTitle:[page objectForKey:@"Title"]
-                                                                               body:[page objectForKey:@"Body"]];
             [newPages addObject:newView];
         }
     }

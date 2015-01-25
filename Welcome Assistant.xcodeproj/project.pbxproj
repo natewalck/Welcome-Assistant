@@ -22,8 +22,6 @@
 		AECD5A761A70CCA6003A4676 /* infoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECD5A741A70CCA6003A4676 /* infoViewController.xib */; };
 		AECD5A7A1A70CE03003A4676 /* imageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECD5A781A70CE03003A4676 /* imageViewController.m */; };
 		AECD5A7B1A70CE03003A4676 /* imageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECD5A791A70CE03003A4676 /* imageViewController.xib */; };
-		AECD5A7F1A70D2D0003A4676 /* eulaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECD5A7D1A70D2D0003A4676 /* eulaViewController.m */; };
-		AECD5A801A70D2D0003A4676 /* eulaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AECD5A7E1A70D2D0003A4676 /* eulaViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,9 +59,6 @@
 		AECD5A771A70CE03003A4676 /* imageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageViewController.h; sourceTree = "<group>"; };
 		AECD5A781A70CE03003A4676 /* imageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageViewController.m; sourceTree = "<group>"; };
 		AECD5A791A70CE03003A4676 /* imageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = imageViewController.xib; sourceTree = "<group>"; };
-		AECD5A7C1A70D2D0003A4676 /* eulaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eulaViewController.h; sourceTree = "<group>"; };
-		AECD5A7D1A70D2D0003A4676 /* eulaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eulaViewController.m; sourceTree = "<group>"; };
-		AECD5A7E1A70D2D0003A4676 /* eulaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = eulaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +120,6 @@
 				AECD5A771A70CE03003A4676 /* imageViewController.h */,
 				AECD5A781A70CE03003A4676 /* imageViewController.m */,
 				AECD5A791A70CE03003A4676 /* imageViewController.xib */,
-				AECD5A7C1A70D2D0003A4676 /* eulaViewController.h */,
-				AECD5A7D1A70D2D0003A4676 /* eulaViewController.m */,
-				AECD5A7E1A70D2D0003A4676 /* eulaViewController.xib */,
 			);
 			path = "Welcome Assistant";
 			sourceTree = "<group>";
@@ -243,7 +235,6 @@
 				AECD5A711A70C675003A4676 /* webViewController.xib in Resources */,
 				AECD5A761A70CCA6003A4676 /* infoViewController.xib in Resources */,
 				AE3085051A6DE25F00B8CDDF /* defaultPrefs.plist in Resources */,
-				AECD5A801A70D2D0003A4676 /* eulaViewController.xib in Resources */,
 				AE98936D1A6DCA4700A14B54 /* Images.xcassets in Resources */,
 				AE9893701A6DCA4700A14B54 /* MainMenu.xib in Resources */,
 			);
@@ -265,7 +256,6 @@
 			files = (
 				AECD5A7A1A70CE03003A4676 /* imageViewController.m in Sources */,
 				AE98936B1A6DCA4700A14B54 /* main.m in Sources */,
-				AECD5A7F1A70D2D0003A4676 /* eulaViewController.m in Sources */,
 				AE9893691A6DCA4700A14B54 /* AppDelegate.m in Sources */,
 				AE30850B1A6DFBA800B8CDDF /* welcomeScreenController.m in Sources */,
 				AECD5A751A70CCA6003A4676 /* infoViewController.m in Sources */,
